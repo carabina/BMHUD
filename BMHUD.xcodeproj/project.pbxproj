@@ -25,6 +25,7 @@
 		327D561020AC06E50047455A /* success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 327D560720AC06E50047455A /* success@2x.png */; };
 		327D561120AC06E50047455A /* success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 327D560820AC06E50047455A /* success@3x.png */; };
 		327D561420AC07090047455A /* BMHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 327D561320AC07090047455A /* BMHUD.m */; };
+		3293A16C20AC088A0055FB71 /* BMHUD.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3293A16B20AC088A0055FB71 /* BMHUD.podspec */; };
 		32EAB36820AC04590003B08F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32EAB36620AC04590003B08F /* Main.storyboard */; };
 		32EAB36A20AC04590003B08F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32EAB36920AC04590003B08F /* Assets.xcassets */; };
 		32EAB36D20AC04590003B08F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32EAB36B20AC04590003B08F /* LaunchScreen.storyboard */; };
@@ -80,6 +81,7 @@
 		327D560820AC06E50047455A /* success@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success@3x.png"; sourceTree = "<group>"; };
 		327D561220AC07090047455A /* BMHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMHUD.h; sourceTree = "<group>"; };
 		327D561320AC07090047455A /* BMHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMHUD.m; sourceTree = "<group>"; };
+		3293A16B20AC088A0055FB71 /* BMHUD.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BMHUD.podspec; sourceTree = "<group>"; };
 		32EAB35A20AC04590003B08F /* BMHUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMHUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32EAB36720AC04590003B08F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32EAB36920AC04590003B08F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 		32EAB35120AC04590003B08F = {
 			isa = PBXGroup;
 			children = (
+				3293A16B20AC088A0055FB71 /* BMHUD.podspec */,
 				32EAB35C20AC04590003B08F /* BMHUD */,
 				32EAB37620AC04590003B08F /* BMHUDTests */,
 				32EAB38120AC04590003B08F /* BMHUDUITests */,
@@ -400,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32EAB36D20AC04590003B08F /* LaunchScreen.storyboard in Resources */,
+				3293A16C20AC088A0055FB71 /* BMHUD.podspec in Resources */,
 				327D560D20AC06E50047455A /* info@2x.png in Resources */,
 				327D560B20AC06E50047455A /* error@3x.png in Resources */,
 				327D560F20AC06E50047455A /* success.png in Resources */,

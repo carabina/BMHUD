@@ -9,6 +9,6 @@ s.platform     = :ios, '6.0'
 s.source       = {:git => 'https://github.com/liangdahong/BMHUD.git', :tag => s.version}
 s.source_files = 'BMHUD/BMHUD/**/*.{h,m}'
 s.resources    = 'BMHUD/BMHUD/**/*.{png}'
-s.dependency 'AFNetworking', '>=1.1.0'
+s.dependency 'MBProgressHUD', '>=1.1.0'
 s.requires_arc = true
 end

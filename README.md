@@ -1,5 +1,5 @@
 # BMHUD
-> BMHUD 一款对 MBProgressHUD 的自定义封装，使用更简洁的 API 接口
+> BMHUD 是一款对 MBProgressHUD 的自定义封装，使用更简洁的 API 接口
 
 ## API
 

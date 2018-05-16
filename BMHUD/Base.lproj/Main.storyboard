@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17C205" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="C84-uh-ZU0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPw-QO-NY7">
+                                <rect key="frame" x="10" y="164" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="loading"/>
+                                <connections>
+                                    <segue destination="d3o-eg-qA1" kind="push" id="TNk-Zf-AJr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiY-w4-jUf">
+                                <rect key="frame" x="10" y="214" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="成功"/>
+                                <connections>
+                                    <segue destination="0wb-H5-YuK" kind="push" id="UbW-Al-Isq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xih-Mt-MAO">
+                                <rect key="frame" x="10" y="264" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="警告"/>
+                                <connections>
+                                    <segue destination="MWs-IX-tVB" kind="push" id="JuU-PW-hDY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfQ-2K-pqu">
+                                <rect key="frame" x="10" y="314" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="错误"/>
+                                <connections>
+                                    <segue destination="TCH-dV-lfs" kind="push" id="9Mc-ZB-YRR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xN1-dx-3wu">
+                                <rect key="frame" x="10" y="364" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="TEXT"/>
+                                <connections>
+                                    <segue destination="ZBV-VS-cZm" kind="push" id="X1h-xX-yzF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Xih-Mt-MAO" secondAttribute="trailing" constant="10" id="6cZ-me-IFg"/>
+                            <constraint firstItem="TfQ-2K-pqu" firstAttribute="top" secondItem="Xih-Mt-MAO" secondAttribute="bottom" constant="20" id="AiL-Yg-GSM"/>
+                            <constraint firstAttribute="trailing" secondItem="TfQ-2K-pqu" secondAttribute="trailing" constant="10" id="EGU-ae-ZjS"/>
+                            <constraint firstItem="xN1-dx-3wu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="JvS-a2-FM6"/>
+                            <constraint firstItem="PiY-w4-jUf" firstAttribute="top" secondItem="vPw-QO-NY7" secondAttribute="bottom" constant="20" id="TYK-ie-6Yg"/>
+                            <constraint firstAttribute="trailing" secondItem="vPw-QO-NY7" secondAttribute="trailing" constant="10" id="Wzk-wg-xc1"/>
+                            <constraint firstItem="vPw-QO-NY7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="XoR-Nc-LeM"/>
+                            <constraint firstItem="PiY-w4-jUf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="YAJ-2P-5bZ"/>
+                            <constraint firstAttribute="trailing" secondItem="PiY-w4-jUf" secondAttribute="trailing" constant="10" id="fG5-UF-vRp"/>
+                            <constraint firstAttribute="trailing" secondItem="xN1-dx-3wu" secondAttribute="trailing" constant="10" id="gtE-BH-vxP"/>
+                            <constraint firstItem="Xih-Mt-MAO" firstAttribute="top" secondItem="PiY-w4-jUf" secondAttribute="bottom" constant="20" id="ljT-g2-ehV"/>
+                            <constraint firstItem="Xih-Mt-MAO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="ngu-8g-Hek"/>
+                            <constraint firstItem="xN1-dx-3wu" firstAttribute="top" secondItem="TfQ-2K-pqu" secondAttribute="bottom" constant="20" id="ojq-hw-kUv"/>
+                            <constraint firstItem="vPw-QO-NY7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="p7K-oB-rMr"/>
+                            <constraint firstItem="TfQ-2K-pqu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="wiJ-bt-cWj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oJ7-L0-BAd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="366" y="-829"/>
+        </scene>
+        <!--错误-->
+        <scene sceneID="NhS-ak-mqn">
+            <objects>
+                <viewController id="TCH-dV-lfs" customClass="BMErrorVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EET-30-EIK"/>
+                        <viewControllerLayoutGuide type="bottom" id="kAh-yb-AYI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cvk-dF-oTK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gI6-Fe-Eg3">
+                                <rect key="frame" x="10" y="100" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加到窗口 屏蔽事件"/>
+                                <connections>
+                                    <action selector="win_noAction:" destination="d3o-eg-qA1" eventType="touchUpInside" id="Zdk-fU-Fdn"/>
+                                    <action selector="win_noAction:" destination="TCH-dV-lfs" eventType="touchUpInside" id="fSx-0a-bSb"/>
+                                    <action selector="win_noAction:" destination="0wb-H5-YuK" eventType="touchUpInside" id="g4W-O3-9sL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXo-f5-hMc">
+                                <rect key="frame" x="10" y="150" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加到窗口 开启事件"/>
+                                <connections>
+                                    <action selector="win_Action:" destination="0wb-H5-YuK" eventType="touchUpInside" id="NoO-3P-v6R"/>
+                                    <action selector="win_Action:" destination="TCH-dV-lfs" eventType="touchUpInside" id="YGS-Dy-WnT"/>
+                                    <action selector="win_Action:" destination="d3o-eg-qA1" eventType="touchUpInside" id="zhn-Ws-K3E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzx-Qc-0hT">
+                                <rect key="frame" x="10" y="220" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加到View 屏蔽事件"/>
+                                <connections>
+                                    <action selector="view_noAction:" destination="TCH-dV-lfs" eventType="touchUpInside" id="6mU-PG-H7v"/>
+                                    <action selector="view_noAction:" destination="d3o-eg-qA1" eventType="touchUpInside" id="KXb-iz-tqh"/>
+                                    <action selector="view_noAction:" destination="0wb-H5-YuK" eventType="touchUpInside" id="QIQ-yC-Kfv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MW-vk-sKq">
+                                <rect key="frame" x="10" y="270" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加到View 开启事件"/>
+                                <connections>
+                                    <action selector="view_Action:" destination="0wb-H5-YuK" eventType="touchUpInside" id="GSr-j1-tjf"/>
+                                    <action selector="view_Action:" destination="d3o-eg-qA1" eventType="touchUpInside" id="hC5-B3-SvX"/>
+                                    <action selector="view_Action:" destination="TCH-dV-lfs" eventType="touchUpInside" id="j2m-GY-fv8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mzx-Qc-0hT" firstAttribute="top" secondItem="eXo-f5-hMc" secondAttribute="bottom" constant="40" id="3gy-fJ-pNx"/>
+                            <constraint firstItem="eXo-f5-hMc" firstAttribute="top" secondItem="gI6-Fe-Eg3" secondAttribute="bottom" constant="20" id="7Hn-gg-ObJ"/>
+                            <constraint firstItem="5MW-vk-sKq" firstAttribute="top" secondItem="mzx-Qc-0hT" secondAttribute="bottom" constant="20" id="Bck-Jx-kB3"/>
+                            <constraint firstItem="gI6-Fe-Eg3" firstAttribute="top" secondItem="Cvk-dF-oTK" secondAttribute="top" constant="100" id="NDx-Pd-V9Y"/>
+                            <constraint firstAttribute="trailing" secondItem="gI6-Fe-Eg3" secondAttribute="trailing" constant="10" id="TZe-2K-bME"/>
+                            <constraint firstAttribute="trailing" secondItem="eXo-f5-hMc" secondAttribute="trailing" constant="10" id="V1m-Ni-met"/>
+                            <constraint firstAttribute="trailing" secondItem="mzx-Qc-0hT" secondAttribute="trailing" constant="10" id="VOb-Tu-48e"/>
+                            <constraint firstItem="eXo-f5-hMc" firstAttribute="leading" secondItem="Cvk-dF-oTK" secondAttribute="leading" constant="10" id="Y9T-Ol-hGQ"/>
+                            <constraint firstAttribute="trailing" secondItem="5MW-vk-sKq" secondAttribute="trailing" constant="10" id="f67-Js-bOd"/>
+                            <constraint firstItem="5MW-vk-sKq" firstAttribute="leading" secondItem="Cvk-dF-oTK" secondAttribute="leading" constant="10" id="rgA-nP-iU9"/>
+                            <constraint firstItem="gI6-Fe-Eg3" firstAttribute="leading" secondItem="Cvk-dF-oTK" secondAttribute="leading" constant="10" id="w5m-Ib-i3c"/>
+                            <constraint firstItem="mzx-Qc-0hT" firstAttribute="leading" secondItem="Cvk-dF-oTK" secondAttribute="leading" constant="10" id="wcV-vM-EAS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="错误" id="fEZ-cY-7O9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tkg-KV-xfq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="619"/>
+        </scene>
+        <!--警告-->
+        <scene sceneID="WAA-cT-jgE">
+            <objects>
+                <viewController id="MWs-IX-tVB" customClass="BMInfoVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CuM-cA-0OQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fs1-Qq-kmh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nqJ-WS-JsZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ekb-4k-R3i">
+                                <rect key="frame" x="10" y="164" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加到窗口 屏蔽事件"/>
+                                <connections>
+                                    <action selector="win_noAction:" destination="0wb-H5-YuK" eventType="touchUpInside" id="XVv-Tg-qAd"/>
+                                    <action selector="win_noAction:" destination="d3o-eg-qA1" eventType="touchUpInside" id="Yjd-ZN-x3S"/>
+                                    <action selector="win_noAction:" destination="MWs-IX-tVB" eventType="touchUpInside" id="s8T-nK-aOW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZy-nf-gcZ">
+                                <rect key="frame" x="10" y="214" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加到窗口 开启事件"/>
+                                <connections>
+                                    <action selector="win_Action:" destination="d3o-eg-qA1" eventType="touchUpInside" id="Syr-a3-VUM"/>
+                                    <action selector="win_Action:" destination="0wb-H5-YuK" eventType="touchUpInside" id="aCu-ah-TAJ"/>
+                                    <action selector="win_Action:" destination="MWs-IX-tVB" eventType="touchUpInside" id="e0t-Y7-hjg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZz-Jf-hWf">
+                                <rect key="frame" x="10" y="284" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加到View 屏蔽事件"/>
+                                <connections>
+                                    <action selector="view_noAction:" destination="MWs-IX-tVB" eventType="touchUpInside" id="VRn-O1-4p1"/>
+                                    <action selector="view_noAction:" destination="0wb-H5-YuK" eventType="touchUpInside" id="YVh-TV-xHu"/>
+                                    <action selector="view_noAction:" destination="d3o-eg-qA1" eventType="touchUpInside" id="ZJq-KW-AlR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjF-7y-HR8">
+                                <rect key="frame" x="10" y="334" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加到View 开启事件"/>
+                                <connections>
+                                    <action selector="view_Action:" destination="0wb-H5-YuK" eventType="touchUpInside" id="Ugt-yw-3Qm"/>
+                                    <action selector="view_Action:" destination="d3o-eg-qA1" eventType="touchUpInside" id="XZX-IL-Jxh"/>
+                                    <action selector="view_Action:" destination="MWs-IX-tVB" eventType="touchUpInside" id="v9Y-1M-pu2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qZz-Jf-hWf" secondAttribute="trailing" constant="10" id="8qq-H1-F9W"/>
+                            <constraint firstItem="bjF-7y-HR8" firstAttribute="leading" secondItem="nqJ-WS-JsZ" secondAttribute="leading" constant="10" id="JoH-2r-0dt"/>
+                            <constraint firstAttribute="trailing" secondItem="Ekb-4k-R3i" secondAttribute="trailing" constant="10" id="Ngb-AB-leK"/>
+                            <constraint firstAttribute="trailing" secondItem="bjF-7y-HR8" secondAttribute="trailing" constant="10" id="RQc-qd-EE1"/>
+                            <constraint firstItem="qZz-Jf-hWf" firstAttribute="leading" secondItem="nqJ-WS-JsZ" secondAttribute="leading" constant="10" id="VM9-v4-BXo"/>
+                            <constraint firstItem="YZy-nf-gcZ" firstAttribute="top" secondItem="Ekb-4k-R3i" secondAttribute="bottom" constant="20" id="Y10-rQ-enZ"/>
+                            <constraint firstItem="Ekb-4k-R3i" firstAttribute="top" secondItem="CuM-cA-0OQ" secondAttribute="bottom" constant="100" id="ZMv-AV-Sqc"/>
+                            <constraint firstItem="Ekb-4k-R3i" firstAttribute="leading" secondItem="nqJ-WS-JsZ" secondAttribute="leading" constant="10" id="Zfl-tq-XIy"/>
+                            <constraint firstItem="bjF-7y-HR8" firstAttribute="top" secondItem="qZz-Jf-hWf" secondAttribute="bottom" constant="20" id="io5-Ku-Mu4"/>
+                            <constraint firstAttribute="trailing" secondItem="YZy-nf-gcZ" secondAttribute="trailing" constant="10" id="lqm-pv-mxX"/>
+                            <constraint firstItem="qZz-Jf-hWf" firstAttribute="top" secondItem="YZy-nf-gcZ" secondAttribute="bottom" constant="40" id="nEd-Jp-zQj"/>
+                            <constraint firstItem="YZy-nf-gcZ" firstAttribute="leading" secondItem="nqJ-WS-JsZ" secondAttribute="leading" constant="10" id="rfe-EL-84F"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="警告" id="O7T-5R-MWo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tIj-1Z-HHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2673" y="64"/>
+        </scene>
+        <!--text-->
+        <scene sceneID="Krf-pE-ulB">
+            <objects>
+                <viewController id="ZBV-VS-cZm" customClass="BMTextVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cdG-JJ-BGS"/>
+                        <viewControllerLayoutGuide type="bottom" id="kaf-Zm-o8y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9UQ-rq-HpS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHF-Nb-biE">
+                                <rect key="frame" x="10" y="100" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加到窗口 屏蔽事件"/>
+                                <connections>
+                                    <action selector="win_noAction:" destination="0wb-H5-YuK" eventType="touchUpInside" id="QUi-vf-fBF"/>
+                                    <action selector="win_noAction:" destination="d3o-eg-qA1" eventType="touchUpInside" id="fu0-eG-03e"/>
+                                    <action selector="win_noAction:" destination="MWs-IX-tVB" eventType="touchUpInside" id="nhs-Bz-WLa"/>
+                                    <action selector="win_noAction:" destination="ZBV-VS-cZm" eventType="touchUpInside" id="qyD-Ve-PS3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQ8-yt-wzR">
+                                <rect key="frame" x="10" y="150" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加到窗口 开启事件"/>
+                                <connections>
+                                    <action selector="win_Action:" destination="0wb-H5-YuK" eventType="touchUpInside" id="16c-Ye-Dx0"/>
+                                    <action selector="win_Action:" destination="MWs-IX-tVB" eventType="touchUpInside" id="7YV-jS-MSI"/>
+                                    <action selector="win_Action:" destination="d3o-eg-qA1" eventType="touchUpInside" id="JQr-Tf-uHT"/>
+                                    <action selector="win_Action:" destination="ZBV-VS-cZm" eventType="touchUpInside" id="VWI-E3-YFS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87V-vJ-RkY">
+                                <rect key="frame" x="10" y="220" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加到View 屏蔽事件"/>
+                                <connections>
+                                    <action selector="view_noAction:" destination="ZBV-VS-cZm" eventType="touchUpInside" id="Dot-CH-P5b"/>
+                                    <action selector="view_noAction:" destination="MWs-IX-tVB" eventType="touchUpInside" id="a6C-lE-Gfa"/>
+                                    <action selector="view_noAction:" destination="d3o-eg-qA1" eventType="touchUpInside" id="otB-po-gYr"/>
+                                    <action selector="view_noAction:" destination="0wb-H5-YuK" eventType="touchUpInside" id="sNG-o5-6xg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMJ-2j-IbD">
+                                <rect key="frame" x="10" y="270" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加到View 开启事件"/>
+                                <connections>
+                                    <action selector="view_Action:" destination="MWs-IX-tVB" eventType="touchUpInside" id="f0h-Vc-oNX"/>
+                                    <action selector="view_Action:" destination="d3o-eg-qA1" eventType="touchUpInside" id="fMZ-4a-ojs"/>
+                                    <action selector="view_Action:" destination="ZBV-VS-cZm" eventType="touchUpInside" id="n3K-Te-rZF"/>
+                                    <action selector="view_Action:" destination="0wb-H5-YuK" eventType="touchUpInside" id="w9c-7L-IYd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hQ8-yt-wzR" firstAttribute="top" secondItem="lHF-Nb-biE" secondAttribute="bottom" constant="20" id="0QK-az-Rxn"/>
+                            <constraint firstItem="PMJ-2j-IbD" firstAttribute="leading" secondItem="9UQ-rq-HpS" secondAttribute="leading" constant="10" id="2Ji-Fp-Y2A"/>
+                            <constraint firstAttribute="trailing" secondItem="hQ8-yt-wzR" secondAttribute="trailing" constant="10" id="J0W-J1-QeE"/>
+                            <constraint firstAttribute="trailing" secondItem="87V-vJ-RkY" secondAttribute="trailing" constant="10" id="Kz3-6f-nct"/>
+                            <constraint firstItem="hQ8-yt-wzR" firstAttribute="leading" secondItem="9UQ-rq-HpS" secondAttribute="leading" constant="10" id="LQ9-SE-ysN"/>
+                            <constraint firstItem="PMJ-2j-IbD" firstAttribute="top" secondItem="87V-vJ-RkY" secondAttribute="bottom" constant="20" id="OEk-Im-rtO"/>
+                            <constraint firstItem="87V-vJ-RkY" firstAttribute="top" secondItem="hQ8-yt-wzR" secondAttribute="bottom" constant="40" id="QDP-sK-6OH"/>
+                            <constraint firstAttribute="trailing" secondItem="PMJ-2j-IbD" secondAttribute="trailing" constant="10" id="Sat-3B-iHo"/>
+                            <constraint firstAttribute="trailing" secondItem="lHF-Nb-biE" secondAttribute="trailing" constant="10" id="aKc-uY-l2b"/>
+                            <constraint firstItem="87V-vJ-RkY" firstAttribute="leading" secondItem="9UQ-rq-HpS" secondAttribute="leading" constant="10" id="bFz-04-Tmo"/>
+                            <constraint firstItem="lHF-Nb-biE" firstAttribute="top" secondItem="9UQ-rq-HpS" secondAttribute="top" constant="100" id="cbP-UO-8mY"/>
+                            <constraint firstItem="lHF-Nb-biE" firstAttribute="leading" secondItem="9UQ-rq-HpS" secondAttribute="leading" constant="10" id="pfL-py-COd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="text" id="9mP-Tn-Rab"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mhy-mF-JQj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2721" y="678"/>
+        </scene>
+        <!--loading-->
+        <scene sceneID="wPX-pt-5ie">
+            <objects>
+                <viewController id="d3o-eg-qA1" customClass="BMLoadingVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mHO-P9-K0l"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Ha-qf-rgS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CSX-U9-34H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ps8-YL-dUj">
+                                <rect key="frame" x="10" y="164" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加到窗口 屏蔽事件"/>
+                                <connections>
+                                    <action selector="win_noAction:" destination="d3o-eg-qA1" eventType="touchUpInside" id="thh-HH-tXw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFi-II-W9i">
+                                <rect key="frame" x="10" y="284" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加到View 屏蔽事件"/>
+                                <connections>
+                                    <action selector="view_noAction:" destination="d3o-eg-qA1" eventType="touchUpInside" id="S7X-t8-wc0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pha-1h-P8l">
+                                <rect key="frame" x="10" y="334" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加到View 开启事件"/>
+                                <connections>
+                                    <action selector="view_Action:" destination="d3o-eg-qA1" eventType="touchUpInside" id="Huy-3H-qoI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlL-Wz-FjP">
+                                <rect key="frame" x="10" y="214" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加到窗口 开启事件"/>
+                                <connections>
+                                    <action selector="win_Action:" destination="d3o-eg-qA1" eventType="touchUpInside" id="Mtv-Lh-4qd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ps8-YL-dUj" firstAttribute="leading" secondItem="CSX-U9-34H" secondAttribute="leading" constant="10" id="0Kb-07-jXc"/>
+                            <constraint firstItem="pha-1h-P8l" firstAttribute="leading" secondItem="CSX-U9-34H" secondAttribute="leading" constant="10" id="6du-ga-iEB"/>
+                            <constraint firstItem="RFi-II-W9i" firstAttribute="leading" secondItem="CSX-U9-34H" secondAttribute="leading" constant="10" id="6lN-VP-VIj"/>
+                            <constraint firstAttribute="trailing" secondItem="pha-1h-P8l" secondAttribute="trailing" constant="10" id="KTu-Ej-bJn"/>
+                            <constraint firstItem="RFi-II-W9i" firstAttribute="top" secondItem="BlL-Wz-FjP" secondAttribute="bottom" constant="40" id="TCS-fw-5Q6"/>
+                            <constraint firstItem="ps8-YL-dUj" firstAttribute="top" secondItem="mHO-P9-K0l" secondAttribute="bottom" constant="100" id="a1p-yQ-NQ0"/>
+                            <constraint firstItem="BlL-Wz-FjP" firstAttribute="top" secondItem="ps8-YL-dUj" secondAttribute="bottom" constant="20" id="egz-Yh-Ror"/>
+                            <constraint firstItem="pha-1h-P8l" firstAttribute="top" secondItem="RFi-II-W9i" secondAttribute="bottom" constant="20" id="kWx-pH-bw9"/>
+                            <constraint firstItem="BlL-Wz-FjP" firstAttribute="leading" secondItem="CSX-U9-34H" secondAttribute="leading" constant="10" id="o7b-8J-SY4"/>
+                            <constraint firstAttribute="trailing" secondItem="ps8-YL-dUj" secondAttribute="trailing" constant="10" id="ohe-lA-bxS"/>
+                            <constraint firstAttribute="trailing" secondItem="RFi-II-W9i" secondAttribute="trailing" constant="10" id="qtj-Sj-NHX"/>
+                            <constraint firstAttribute="trailing" secondItem="BlL-Wz-FjP" secondAttribute="trailing" constant="10" id="wsu-GJ-gDp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="loading" id="Fg6-BZ-IdK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EAC-Ae-tR2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3508" y="-582"/>
+        </scene>
+        <!--成功-->
+        <scene sceneID="kkc-VA-hfS">
+            <objects>
+                <viewController id="0wb-H5-YuK" customClass="BMSuccessVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Hx-eX-def"/>
+                        <viewControllerLayoutGuide type="bottom" id="dyW-v6-4Ko"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m0d-ho-Ifn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeF-NN-ce1">
+                                <rect key="frame" x="10" y="164" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加到窗口 屏蔽事件"/>
+                                <connections>
+                                    <action selector="win_noAction:" destination="0wb-H5-YuK" eventType="touchUpInside" id="03z-c6-PQf"/>
+                                    <action selector="win_noAction:" destination="d3o-eg-qA1" eventType="touchUpInside" id="Ir1-eU-ZA4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vV1-HO-Hrp">
+                                <rect key="frame" x="10" y="214" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加到窗口 开启事件"/>
+                                <connections>
+                                    <action selector="win_Action:" destination="0wb-H5-YuK" eventType="touchUpInside" id="XvF-bf-JBS"/>
+                                    <action selector="win_Action:" destination="d3o-eg-qA1" eventType="touchUpInside" id="zsL-7H-LEr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30e-Wk-0oJ">
+                                <rect key="frame" x="10" y="284" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加到View 屏蔽事件"/>
+                                <connections>
+                                    <action selector="view_noAction:" destination="0wb-H5-YuK" eventType="touchUpInside" id="9Fl-8N-wT0"/>
+                                    <action selector="view_noAction:" destination="d3o-eg-qA1" eventType="touchUpInside" id="Ylx-VL-o6S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqT-vc-FUI">
+                                <rect key="frame" x="10" y="334" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加到View 开启事件"/>
+                                <connections>
+                                    <action selector="view_Action:" destination="d3o-eg-qA1" eventType="touchUpInside" id="s0s-Md-Zzb"/>
+                                    <action selector="view_Action:" destination="0wb-H5-YuK" eventType="touchUpInside" id="wNI-vc-cg8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KqT-vc-FUI" secondAttribute="trailing" constant="10" id="1Xz-Z1-uXS"/>
+                            <constraint firstItem="KqT-vc-FUI" firstAttribute="leading" secondItem="m0d-ho-Ifn" secondAttribute="leading" constant="10" id="GKu-1N-z1u"/>
+                            <constraint firstItem="qeF-NN-ce1" firstAttribute="leading" secondItem="m0d-ho-Ifn" secondAttribute="leading" constant="10" id="No9-Xk-flb"/>
+                            <constraint firstAttribute="trailing" secondItem="vV1-HO-Hrp" secondAttribute="trailing" constant="10" id="Nys-SF-bAH"/>
+                            <constraint firstItem="vV1-HO-Hrp" firstAttribute="top" secondItem="qeF-NN-ce1" secondAttribute="bottom" constant="20" id="Ocz-hL-h8R"/>
+                            <constraint firstAttribute="trailing" secondItem="qeF-NN-ce1" secondAttribute="trailing" constant="10" id="Plt-9E-NZ6"/>
+                            <constraint firstItem="30e-Wk-0oJ" firstAttribute="top" secondItem="vV1-HO-Hrp" secondAttribute="bottom" constant="40" id="QFS-CP-5fq"/>
+                            <constraint firstItem="KqT-vc-FUI" firstAttribute="top" secondItem="30e-Wk-0oJ" secondAttribute="bottom" constant="20" id="gvV-iN-1Ks"/>
+                            <constraint firstItem="qeF-NN-ce1" firstAttribute="top" secondItem="4Hx-eX-def" secondAttribute="bottom" constant="100" id="mgq-Qi-Yja"/>
+                            <constraint firstAttribute="trailing" secondItem="30e-Wk-0oJ" secondAttribute="trailing" constant="10" id="qhC-et-lCq"/>
+                            <constraint firstItem="30e-Wk-0oJ" firstAttribute="leading" secondItem="m0d-ho-Ifn" secondAttribute="leading" constant="10" id="s4J-Ex-RBx"/>
+                            <constraint firstItem="vV1-HO-Hrp" firstAttribute="leading" secondItem="m0d-ho-Ifn" secondAttribute="leading" constant="10" id="yJ8-aa-Esw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="成功" id="17j-Ye-VOo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="57S-9T-kw8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2970" y="-1379"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mhp-Ku-bDl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C84-uh-ZU0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vi9-cm-OIE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="C0A-pY-9Bk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bUK-aH-FhU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-209" y="-582"/>
+        </scene>
+    </scenes>
+</document>
